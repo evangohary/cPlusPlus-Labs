@@ -17,7 +17,7 @@ class payRoll{
 //	void setHours(float hours);
 //	void setHourlyRate(float rate);
 	
-	 void setHours(float hours){
+	void setHours(float hours){
 	 	hoursWorked = hours;
 	 }
 	void setHourlyRate(float rate){
@@ -30,7 +30,7 @@ class payRoll{
 		return payRates;
 	}
 
-	double getGrossPay(void){
+	double getGrossPay(double tempVal){
 		return getHours()*getRates();
 	}
 
@@ -45,24 +45,21 @@ int main (){
 	float tempVal;
 	
 	ifstream dataIn;	
-	dataIn.open("payroll.txt");
+	dataIn.open("payroll.dat");
 
 
 //loop to read the number of hours each employee worked and their 
 //hourly pay rate
 	for(int i=0; i<7; i++){
 		
-		
-		dataIn >> tempVal;
-		myPayRoll[i].setHours(tempVal);
-		dataIn >> tempVal;
-		myPayRoll[i].setHourlyRate(tempVal);	
+
+	
 	
 	
 	cout << "Employee   Gross Pay";
 	cout << "========   =========";
 
-	cout<< i << ":   $" << myPayRoll[i].getGrossPay << endl;
+	cout<< i << ":   $" << myPayRoll[i].getGrossPay(tempVal) << endl;
 	}
 	
 }
