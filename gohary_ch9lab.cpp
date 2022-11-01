@@ -1,4 +1,12 @@
-//ch9 lab - sorting a playlist
+//************************
+// CH9 lab sorting a playlist
+// Programmer: Evan Gohary
+// Completed 10/27/2022
+//
+//this program allows a user to enter 10 songs w/ their artists, 
+// using a 10 elemnent array. it should osrt the entries by artists 
+//************************************************
+
 #include <iostream>
 #include <fstream>
 #include <string>
