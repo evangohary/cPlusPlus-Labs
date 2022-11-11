@@ -3,14 +3,14 @@
 
 #include <iostream>
 using namespace std;
-void bubbleSort (int[], int);
-double median(int *, int);
+void bubbleSort (int[], int); 
+double median(int *, int); 
 void printArray(int *, int);
 
 int main(){
 	
-	int even[] = {17, 32, 45, 68, 99, 101, 67, 89, 22, 27};
-	int odd[] = {17, 32, 45, 68, 99, 101, 67, 89, 22};
+	int even[] = {17, 32, 45, 68, 99, 101, 67, 89, 22, 27}; // even array
+	int odd[] = {17, 32, 45, 68, 99, 101, 67, 89, 22}; // odd array
 	
 //	int len1 = sizeof(evenArr)/sizeof(evenArr[0]); // get array length
 //	sort(evenArr, evenArr + len1);
@@ -48,7 +48,7 @@ void bubbleSort(int array[], int size){
 		}
 	} while (swap);
 }
-
+//compute the median of an array of num entries
 double median(int *arr, int num){
 	double med;
 	if (num %  2 == 0){// is number of elements even?>
@@ -58,7 +58,7 @@ double median(int *arr, int num){
 		med = *(arr+ (num/2));
 	} return med;
 }
-	
+	//print the array
 void printArray(int *p, int size){
 	cout << endl;
 	for (int k = 0; k < size; k++){
