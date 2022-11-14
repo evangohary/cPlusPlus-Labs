@@ -1,5 +1,11 @@
-// lab 10A - pointers
-//sort the 2 arrays, and, display the median of the array
+//************************
+// CH10A lab, Pointers
+// Programmer: Evan Gohary
+// Completed 10/14/2022 
+//
+// This program sorts, then find the median of two arrays.
+//  One array is an even numbered array, one is odd
+//************************************************
 
 #include <iostream>
 using namespace std;
