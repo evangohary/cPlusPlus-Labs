@@ -1,4 +1,12 @@
-// lab 10-b
+//************************
+// CH10B lab, Dynamic memory allocation
+// Programmer: Evan Gohary
+// Completed 11/10/2022 
+//
+// This program accepts a number of students from the user, then dynamically
+// creates an array that is large enough to contain the number of movies watched 
+// for each student. Print the average, then, free the allocated array when done
+//************************************************
 
 #include <iostream>
 #include <iomanip>
@@ -27,9 +35,7 @@ int main(){
 	
 	getData(movieData, numberOfStudents);
 	//sprt score using STL algorithm sort libary function
-	
 	sort(movieData, movieData + numberOfStudents);
-	
 	displaySorted(movieData, numberOfStudents);
 	cout << showpoint << fixed << setprecision (2) << "the Avg is :" <<average (movieData, numberOfStudents);
 	
