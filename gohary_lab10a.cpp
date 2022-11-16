@@ -1,7 +1,7 @@
 //************************
 // CH10A lab, Pointers
 // Programmer: Evan Gohary
-// Completed 10/14/2022 
+// Completed 11/10/2022 
 //
 // This program sorts, then find the median of two arrays.
 //  One array is an even numbered array, one is odd
@@ -29,10 +29,10 @@ int main(){
 	
 	cout << "\nMedian of array: ";
 	printArray(odd,9);
-	cout << "is " << median(odd, 9) << endl;
+	cout << "would be: " << median(odd, 9) << endl;
 	cout << "\nMedian of array: ";
 	printArray(even,10);
-	cout << "is " << median(even,10) << endl << endl;
+	cout << "would be: " << median(even,10) << endl << endl;
 
 
 	return 0;
