@@ -24,21 +24,21 @@ int main(){
 //	for(int i = 0; i < len; i++){}
 
 
-	bubbleSort (odd, 9);
-	bubbleSort (even, 10);
+	bubbleSort (odd, 9); //invoke odd array to be sorted
+	bubbleSort (even, 10); // invoke even array to be sorted
 	
 	cout << "\nMedian of array: ";
-	printArray(odd,9);
-	cout << "would be: " << median(odd, 9) << endl;
+	printArray(odd,9); //odd array with the size of 9
+	cout << "Is " << median(odd, 9) << endl;
 	cout << "\nMedian of array: ";
-	printArray(even,10);
-	cout << "would be: " << median(even,10) << endl << endl;
+	printArray(even,10); // even array with size of 10
+	cout << "Is " << median(even,10) << endl << endl;
 
 
 	return 0;
 }
 
-// Bubble sort, teachers method
+// Bubble sort our values 
 void bubbleSort(int array[], int size){
 	bool swap; 
 	int temp;
@@ -67,8 +67,8 @@ double median(int *arr, int num){
 	//print the array
 void printArray(int *p, int size){
 	cout << endl;
-	for (int k = 0; k < size; k++){
-		cout << p[k] << " ";
+	for (int k = 0; k < size; k++){ // size is our 9 and 10  
+		cout << p[k] << " "; // display the memory location pointed to by p
 	cout << endl;
 	}
 }
